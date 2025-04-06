@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration</title>
+    <link rel="stylesheet" href="css/styles2.css" />
+    <script src="JS/validation.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Registration Form Section -->
+    <main>
+      <div class="form-container">
+        <h2>User Registration</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required />
+          <span id="firstNameError" class="error-message"></span>
+
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required />
+          <span id="lastNameError" class="error-message"></span>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <span id="emailError" class="error-message"></span>
+
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required />
+          <span id="dobError" class="error-message"></span>
+
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            pattern="^\d{10}$"
+          />
+          <span id="phoneError" class="error-message"></span>
+
+          <label for="address">Address</label>
+          <textarea id="address" name="address" required></textarea>
+          <span id="addressError" class="error-message"></span>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Corporate Attendance System. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

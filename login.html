@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Corporate Attendance System</title>
+    <link rel="stylesheet" href="css/styles3.css" />
+    <script src="login-validation.js" defer></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Login Form Section -->
+    <main>
+      <div class="form-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validateLogin()">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+          <span id="emailError" class="error-message"></span>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <span id="passwordError" class="error-message"></span>
+
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Corporate Attendance System. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
